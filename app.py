@@ -478,4 +478,4 @@ if __name__ == '__main__':
         st.write("Tokens totales",st.session_state.get("total_tokens",0))
         st.write("Coste total €",round(st.session_state.get("total_cost",0),5))
 
-st.session_state
+#st.session_state
