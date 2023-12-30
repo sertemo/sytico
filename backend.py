@@ -13,20 +13,15 @@ from youtube_transcript_api import YouTubeTranscriptApi
 from langchain.document_loaders.youtube import YoutubeLoader
 
 from langchain.chat_models import ChatOpenAI
-
 from langchain.docstore.document import Document
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-
 from langchain.chains.summarize import load_summarize_chain,MapReduceDocumentsChain
 from langchain.prompts.chat import (
     ChatPromptTemplate,
     SystemMessagePromptTemplate,
-    HumanMessagePromptTemplate,
-)
+    HumanMessagePromptTemplate,)
 from langchain.callbacks import get_openai_callback
-
 from langchain.chains import create_extraction_chain
-
 from langchain.schema.output_parser import StrOutputParser
 
 #Precio por 1 token
